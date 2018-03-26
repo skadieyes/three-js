@@ -1,0 +1,53 @@
+.resume-body{
+    height: 100%;
+    width: 100%;
+    background-color: gold;
+    .person-info{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        .head{
+            .head-img{
+                border-radius: 50%;
+            }
+        }
+        .title{
+            font-size:36px;
+            line-height: 46px;
+            padding: 20px 5px 5px 5px;
+            opacity: 0.8;
+        }
+        .info{
+            font-size: 14px;
+            padding: 2px;
+            opacity: 0.8;
+        }
+    }
+}
+
+.resume-tech{
+    background-color:lightblue;
+    height: 100%;
+    width: 100%;
+    .tech-info{
+        height: 100%;
+    .title{
+        font-size:36px;
+        line-height: 46px;
+        padding: 30px;
+        opacity: 0.8;
+    }
+    .tech-chart{
+        height:100%;
+        width: 100%;
+        .chart-js{
+            height: 40%;
+            width: 50%;
+        }
+        .chart-css{
+            height: 40%;
+            width: 50%;
+        }
+    }
+}
+}
