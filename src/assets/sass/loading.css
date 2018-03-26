@@ -2,7 +2,7 @@ body {
     height: 100vh;
     font-family: "微软雅黑", sans-serif;
     text-align: center;
-    overflow: hidden;
+    margin: 0;
   }
   body h1 {
     text-transform: uppercase;

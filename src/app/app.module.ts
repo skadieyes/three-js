@@ -7,7 +7,7 @@ import { AppRoutes } from './app.routes';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FoodModule } from './food/food.module';
 import { FlyGameModule } from './fly-game/fly-game.module';
-
+import { ResumeModule } from './resume/resume.module';
 @NgModule({
     declarations: [
         AppComponent
@@ -17,7 +17,8 @@ import { FlyGameModule } from './fly-game/fly-game.module';
         BrowserAnimationsModule,
         AppRoutes,
         FoodModule,
-        FlyGameModule
+        FlyGameModule,
+        ResumeModule
     ],
     bootstrap: [AppComponent]
 })
