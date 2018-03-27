@@ -23,7 +23,7 @@ export class FoodComponent implements OnInit {
     planeMaterial: any;
 
     ngOnInit() {
-        this.initStats();
+       // this.initStats();
         this.sceneSet();
         this.cameraSet();
         this.rendererSet();
@@ -153,7 +153,7 @@ export class FoodComponent implements OnInit {
     renderRun(): void {
         this.renderer.render(this.scene, this.camera);
         this.render = () => {
-            this.stats.update();
+        //    this.stats.update();
             window.requestAnimationFrame(this.render);
             this.scene.traverse((e: any) => {
                 if (e instanceof THREE.Mesh && e !== this.plane) {

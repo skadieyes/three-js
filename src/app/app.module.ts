@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FoodModule } from './food/food.module';
 import { FlyGameModule } from './fly-game/fly-game.module';
 import { ResumeModule } from './resume/resume.module';
+import { NgZorroAntdModule } from 'ng-zorro-antd';
 @NgModule({
     declarations: [
         AppComponent
@@ -18,7 +19,8 @@ import { ResumeModule } from './resume/resume.module';
         AppRoutes,
         FoodModule,
         FlyGameModule,
-        ResumeModule
+        ResumeModule,
+        NgZorroAntdModule.forRoot()
     ],
     bootstrap: [AppComponent]
 })

@@ -9,18 +9,13 @@ import { ResumeService } from './resume.service';
     providers: [ResumeService]
 })
 export class ResumeComponent implements OnInit, AfterViewInit {
-    @ViewChild('techChartJs') techChartJs: any;
-    @ViewChild('techChartCss') techChartCss: any;
+    @ViewChild('techChart') techChart: any;
     constructor(private _el: ElementRef, private _render: Renderer2, public _resume: ResumeService) { }
 
     ngOnInit() {
-        const chartJs = echarts.init(this.techChartJs.nativeElement, 'dark');
-        const techData = this._resume.techTreeJs;
-        chartJs.setOption(techData);
-
-        const chartCss = echarts.init(this.techChartCss.nativeElement, 'dark');
-        const techCssData = this._resume.techTreeCss;
-        chartCss.setOption(techCssData);
+        const chart = echarts.init(this.techChart.nativeElement, 'dark');
+        const techData = this._resume.techTree;
+        chart.setOption(techData);
     }
     ngAfterViewInit() {
 
