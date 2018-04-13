@@ -556,7 +556,7 @@ Sea = function () {
         });
     };
 
-    var texture = THREE.ImageUtils.loadTexture("./../../../texture/magma.jpeg");
+    var texture = THREE.ImageUtils.loadTexture("./../../texture/magma.jpeg");
     var mat = new THREE.MeshPhongMaterial({
         transparent: true,
         opacity: .8,
